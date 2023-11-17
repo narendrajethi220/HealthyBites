@@ -44,7 +44,8 @@ header {
   transform: translate(-50%, -50%);
 }
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type="submit"] {
   display: inline-block;
   padding: 10px 30px;
   text-decoration: none;
@@ -53,7 +54,8 @@ header {
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type="submit"] {
   background-color: #e67e22;
   color: white;
   border: 1px solid #e67e22;
@@ -65,7 +67,8 @@ header {
   color: #e67e22;
 }
 .btn:hover,
-.btn-active {
+.btn-active,
+input[type="submit"] {
   background-color: #cf6d17;
 }
 .btn-ghost:hover,
@@ -74,7 +77,8 @@ header {
   color: white;
 }
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type="submit"] {
   border: 1px solid #cf6d17;
 }
 .logo {
@@ -358,4 +362,30 @@ blockquote::before {
   background-color: #fcfcfc;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}
+
+/* ===============================Contact Us Form ============== */
+.section-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+textarea {
+  height: 100%;
+}
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+.contact-form label {
+  font-size: 120%;
+  font-weight: 400;
 }
