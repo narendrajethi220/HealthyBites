@@ -13,6 +13,9 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
+    <!-- AOS framework -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="resources/js/index.js"></script>
   </head>
   <body>
     <!--============================================= Header Section ==========-->
@@ -21,22 +24,22 @@
         <div class="row">
           <img class="logo" src="resources/images/logo.png" alt="logo-img" />
         <ul class="main-nav">
-          <li><a href="#">Food delivery</a></li>
-          <li><a href="#">How it works ?</a></li>
-          <li><a href="#">Our cities</a></li>
-          <li><a href="#">Sign-up</a></li>
+          <li><a href="#features">Food delivery</a></li>
+          <li><a href="#hiw">How it works ?</a></li>
+          <li><a href="#city">Our cities</a></li>
+          <li><a href="#signup">Sign-up</a></li>
         </ul>
       </nav>
     </div>
       <div class="hero-text-box">
         <h1>Goodbye junk food <br />Hello super healthy food</h1>
-        <a class="btn btn-full" href="#">I'm Hungry</a>
-        <a class="btn btn-ghost" href="#">Show me more</a>
+        <a class="btn btn-full" href="#plans">I'm Hungry</a>
+        <a class="btn btn-ghost" href="#features">Show me more</a>
       </div>
     </header>
 
     <!-- ============================================ Feature Section ========== -->
-    <section class="section-features"> 
+    <section class="section-features" id="features" data-aos="fade-in" data-aos-duration="4000"> 
             <div class="row">
               <h2>Get food fast &mdash; Not fast food</h2>
                 <p class="long-copy">
@@ -68,7 +71,7 @@
     </section>
 
     <!-- ================================================ Meals Showcase Section ========= -->
-    <section class="section-meals">
+    <section class="section-meals" data-aos="fade-in" data-aos-duration="4000">
      
             <ul class="meals-showcase clearfix">
                  
@@ -118,13 +121,13 @@
     </section>
 
     <!-- =============================================== How it works Section ? =========== -->
-    <section class="section-steps">
+    <section class="section-steps" id="hiw" data-aos="fade-in" data-aos-duration="4000">
     <div class="row">
       <h2>How it works ? &mdash; Simple as 1,2,3</h2>
     </div>  
     <div class="row">
       <div class="col span_1_of_2 steps-box">
-        <img src="resources/images/smart-phone.jpg" alt="phone-image" class="app-screen">
+        <img data-aos="slide-left" data-aos-duration="4000" src="resources/images/smart-phone.jpg" alt="phone-image" class="app-screen">
       </div>
       <div class="col span_1_of_2 steps-box">
         <div class="works-step">
@@ -145,7 +148,7 @@
     </div>
   </section>
  <!-- ==================================== Cities Section =============-->
- <section class="section-cities">
+ <section class="section-cities" id="city" data-aos="fade-in" data-aos-duration="4000">
      <div class="row">
       <h2>We're currently in these cities</h2>
      </div>
@@ -205,7 +208,7 @@
      </div>
  </section>
 <!-- ============================================= Testimonial ========================= -->
-<section class="section-testimonials">
+<section class="section-testimonials" data-aos="fade-in" data-aos-duration="4000">
   <div class="row">
     <h2>Our customer can't live without us</h2>
   </div>
@@ -240,13 +243,13 @@
   </div>
 </section>
 <!--=============================== Plan Section ========-->
-<section class="section-plans">
+<section class="section-plans" id="plans" data-aos="fade-in" data-aos-duration="4000">
   <div class="row">
     <h2>Start eating healthy today</h2>
   </div>
   <div class="row">
     <div class="col span_1_of_3">
-      <div class="plan-box">
+      <div class="plan-box" data-aos="flip-right" data-aos-duration="2000">
         <div>
           <h3>Premium</h3>
           <p class="plan-price">Rs.149 <span>/ month</span></p>
@@ -266,7 +269,7 @@
       </div>
     </div>
     <div class="col span_1_of_3">
-      <div class="plan-box">
+      <div class="plan-box" data-aos="flip-up" data-aos-duration="2000">
         <div>
           <h3>Pro</h3>
           <p class="plan-price">Rs.99 <span>/ month </span></p>
@@ -286,7 +289,7 @@
       </div>
     </div>
     <div class="col span_1_of_3">
-      <div class="plan-box">
+      <div class="plan-box" data-aos="flip-left" data-aos-duration="2000" >
         <div>
           <h3>Starter</h3>
           <p class="plan-price">Rs.49 <span>/ month</span></p>
@@ -308,7 +311,7 @@
   </div>
 </section>
 <!--==================================== Contact Form  ===================-->
-<section class="section-form">
+<section class="section-form" id="signup" data-aos="fade-in" data-aos-duration="4000">
   <div class="row">
     <h2>
       We're happy to here from you
@@ -381,7 +384,7 @@
   </div>
 </section>
 <!-- =============================Footer===================== -->
-<footer>
+<footer data-aos="fade-in" data-aos-duration="4000">
   <div class="row">
      <div class="col span_1_of_2">
          <ul class="footer-nav">
@@ -407,5 +410,12 @@
 </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  </body>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+<!-- aos Framework -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
 </html>
